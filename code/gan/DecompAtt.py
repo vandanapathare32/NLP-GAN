@@ -203,7 +203,7 @@ if __name__ == '__main__':
 
         model = DecompAtt(config, is_training=True)
         sess.run(tf.global_variables_initializer())
-
+          
         input_x_1 = np.random.randint(config.vocab_size, size=(config.batch_size, config.sequence_length_q))
         input_x_2 = np.random.randint(config.vocab_size, size=(config.batch_size, config.sequence_length_a))
         input_x_3 = np.random.randint(config.vocab_size, size=(config.batch_size, config.sequence_length_a))
