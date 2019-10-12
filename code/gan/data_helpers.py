@@ -32,7 +32,7 @@ def build_vocab(dataset, pretrained_embeddings_path):
         vocab = {}
         vocab['UNKNOWN'] = code
         code += 1
-        filenames = ['{}/train.data'.format(dataset), '{}/valid.data'.format(dataset), '{}/test.data'.format(dataset)]
+        filenames = ['{}train.data'.format(dataset), '{}valid.data'.format(dataset), '{}test.data'.format(dataset)]
         for filename in filenames:
             for line in open(filename):
                 items = line.strip().split(' ')
