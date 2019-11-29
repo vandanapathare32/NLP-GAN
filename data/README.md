@@ -30,25 +30,9 @@ python prep_dataset.py -dataset mcql -data_dir mcql -out_dir mcql_processed
 ```
 
 
-## SciQ
-1. Download the original SciQ dataset from [here](http://data.allenai.org/sciq/).
-1. Extract the dataset under this folder
-    ```shell
-    unzip SciQ.zip && mv SciQ\ dataset-2\ 3 sciq
+
     ```
-1. The following command can convert the data into a format for ranking models.
-    ```shell
-    python prep_dataset.py -dataset sciq -data_dir sciq -out_dir sciq_processed
-    ```
-1. The processed data can be located under folder `sciq_processed`. Check below for a summary of data files. 
-Each file is in the same format as that for MCQL.
-    
-    File           | Content   | Size | Description | 
-    --|--|--|--
-    train_neg.json | MCQs | 11679 |Training set|
-    valid_neg.json | MCQs | 1000  |Validation set |
-    test_neg.json | MCQs  | 1000  |Test set |
-    vocab.txt | Distractors | 22379 |Candidate distractors |
+
     
 ## References
 Please cite the following papers if you use this data.
