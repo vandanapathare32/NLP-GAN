@@ -1,5 +1,5 @@
 # NLP-GAN
-
+Original repository :- LTR-DG
 Data and code used for paper "Distractor Generation for Multiple Choice Questions Using Learning to Rank" (Liang, BEA'18). 
 
 The goal is to predict 3 distractors for the question and its correct answer provided. The predicted distractors should have very close resemblance to the set of question and answer. Evaluation will be made on basis of consine similarity between the set and the distractors generated.
